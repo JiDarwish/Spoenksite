@@ -17,6 +17,10 @@ img {
     height: auto;
 }
 
+.table-prices {
+    margin: 10px;
+}
+
 .container-fluid {
     /* Breedte van de sections*/
     width: 65%;
@@ -55,4 +59,22 @@ img {
 
 .text-medium {
     font-size: 200%;
+}
+
+.timeslot {
+    float: left;
+    margin: 5px;
+    padding: 5px 0px 5px 5px;
+    color: white;
+    background: #a64cd5;
+    width: 280px;
+    height: 50px;
+    font-size: 12px;
+}
+
+@media (max-width: 992px) {
+    .container-fluid {
+        /* Breedte van de sections op kleinere schermen*/
+        width: 95%;
+    }
 }

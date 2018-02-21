@@ -1,0 +1,25 @@
+{
+  "friday": {
+    "dayTitle": "Vrijdag 1 juni",
+    "events": [
+      {
+        "name": "Opbouwen",
+        "start": 1200,
+        "end": 1500,
+        "img": "img/opbouwen.png"
+      },
+      {
+        "name": "Tent opzetten",
+        "start": 1900,
+        "end": 2100,
+        "img": "img/tent.png"
+      },
+      {
+        "name": "Feest",
+        "start": 2200,
+        "end": 2400,
+        "img": "img/tent.png"
+      }
+    ]
+  }
+}

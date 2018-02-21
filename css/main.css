@@ -1,0 +1,58 @@
+body {
+    /* Achtergrond van de pagina */
+    background: url("../img/achtergrond.png") no-repeat fixed;
+    background-size: 100% auto;
+    background-color: #204F98;
+    font-size: 20px;
+    /*font-family: "Arial Black", serif;*/
+}
+
+section {
+    /* De ruimte tussen elke section */
+    margin-bottom: 100px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container-fluid {
+    /* Breedte van de sections*/
+    width: 65%;
+    padding-top: 25px;
+    padding-bottom: 50px;
+    background-color: #2982de;
+}
+
+.fancy-border {
+    /* Soort border die om alle sections heen zit */
+    border: 5px dashed #152c61;
+    border-radius: 5px;
+}
+
+#mainNav {
+    background-color: #1830de
+}
+
+.nav-link {
+    /* Kleur van de tekst in de nav-bar */
+    color: white !important;
+}
+
+.navbar-brand {
+    /* Kleur van de tekst in de navbar linksboven */
+    color: white !important
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-big {
+    font-size: 250%;
+}
+
+.text-medium {
+    font-size: 200%;
+}

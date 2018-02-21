@@ -12,7 +12,8 @@ Als je dit op je eigen laptop uitpakt en index.html opent met je favoriete brows
 Ik raad Webstorm aan als text editor, maar kladblok werkt ook gewoon :)
 
 # Dingen die je sowieso moet aanpassen
-- Achtergrond plaatje
+- Achtergrond plaatje (Als je het parallax effect wilt, moet je of een hoog plaatje nemen (3000px), of een plaatje dat verticaal kan repeaten. Dit ziet er het mooist uit.
+- Zet de achtergrondkleur op iets dat op het plaatje lijkt voor het geval er toch iets mis gaat ;)
 - Favicon
 - Datum in de header
 - Logo

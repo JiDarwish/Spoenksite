@@ -4,21 +4,21 @@
     "events": [
       {
         "name": "Opbouwen",
-        "start": 1200,
-        "end": 1500,
-        "img": "img/opbouwen.png"
+        "start": "12:00",
+        "width": 2,
+        "img": "img/calendar/opbouwen.png"
       },
       {
         "name": "Tent opzetten",
-        "start": 1900,
-        "end": 2100,
-        "img": "img/tent.png"
+        "start": "19:00",
+        "width": 2,
+        "img": "img/calendar/tent.png"
       },
       {
         "name": "Feest",
-        "start": 2200,
-        "end": 2400,
-        "img": "img/tent.png"
+        "start": "21:00",
+        "width": 2,
+        "img": "img/calendar/tent.png"
       }
     ]
   }

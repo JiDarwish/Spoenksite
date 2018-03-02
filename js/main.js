@@ -49,7 +49,7 @@ var sponsors = [
 
 function createSponsor(sponsorData) {
     var html = "";
-    html += "<div class='col-sm-4 col-md-2 sponsor'>";
+    html += "<div class='col-sm-4 col-xl-2 sponsor'>";
     html += "<a href='" + sponsorData.url + "' target='_blank'><img class='img-sponsor' src='" + sponsorData.img + "'></a>";
     html += "</div>";
     return html;

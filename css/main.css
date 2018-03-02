@@ -17,7 +17,18 @@ img {
     height: auto;
 }
 
+.sponsor {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.img-sponsor {
+    width:100%;
+}
+
+
 .caption {
+    /* Caption of the thumbnails */
     color:white;
 }
 
@@ -25,13 +36,21 @@ img {
     margin: 10px;
 }
 
-.container-fluid {
-    /* Breedte van de sections*/
+.container-fluid{
+    /* Breedte van de sections */
     width: 65%;
     padding-top: 25px;
     padding-bottom: 50px;
+}
+
+.container-background-color {
     background-color: #2982de;
 }
+
+footer{
+    background-color: rgba(255, 0, 0, 0.51) !important;
+}
+
 
 .fancy-border {
     /* Soort border die om alle sections heen zit */

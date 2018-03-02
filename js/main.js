@@ -1,6 +1,61 @@
 // Right margin in the calendar in %
 const CALENDAR_MARGIN = 3;
 
+// Add sponsors here and they will appear in the footer.
+var sponsors = [
+    {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }, {
+        "name": "BBQuties",
+        "url": "http://www.bbquties.nl",
+        "img": "img/sponsors/bbquties.jpg"
+    }
+
+];
+
+function createSponsor(sponsorData) {
+    var html = "";
+    html += "<div class='col-sm-4 col-md-2 sponsor'>";
+    html += "<a href='" + sponsorData.url + "' target='_blank'><img class='img-sponsor' src='" + sponsorData.img + "'></a>";
+    html += "</div>";
+    return html;
+}
+
+// Add events to this calendar and change the width to make it look perfect.
 var calendar = {
     "friday": {
         "dayTitle": "Vrijdag 1 juni",
@@ -120,6 +175,12 @@ function addCalendarToHTML(calendar) {
     html += createDay(calendar.sunday);
     console.log(html);
     $(".calendar-body").html(html);
+    html = "";
+
+    for (var i = 0; i < sponsors.length; i++) {
+        html += createSponsor(sponsors[i]);
+    }
+    $(".sponsor-body").html(html);
 }
 
 function createDay(dayData) {
@@ -129,7 +190,7 @@ function createDay(dayData) {
     html += "<div class='row calendar-day'>";
 
     for (var i = 0; i < dayData.events.length; i++) {
-        html += createEvent(dayData.events[i], i === (dayData.events.length-1));
+        html += createEvent(dayData.events[i], i === (dayData.events.length - 1));
     }
     html += "</div>";
     return html;

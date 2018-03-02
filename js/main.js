@@ -141,12 +141,12 @@ function createEvent(eventData, last) {
     console.log(margin);
     var html = "";
     if (eventData.name === "empty") {
-        html += "<div style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%' class='d-none d-sm-block'>";
+        html += "<div class='calendar-size' style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%' class='d-none d-sm-block'>";
         html += "<div class='calendar-entry calendar-empty'>";
         html += "</div>";
         html += "</div>";
     } else {
-        html += "<div style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%'>";
+        html += "<div class='calendar-size' style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%'>";
         html += "<div class='calendar-entry calendar-event'>";
         html += "<img src='" + eventData.img + "' class='calendar-image'>";
         html += "<p class='calendar-description'>" + eventData.start + "</p>";

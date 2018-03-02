@@ -17,6 +17,10 @@ img {
     height: auto;
 }
 
+.caption {
+    color:white;
+}
+
 .table-prices {
     margin: 10px;
 }

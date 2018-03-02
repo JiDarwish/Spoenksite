@@ -26,10 +26,18 @@
 
 }
 
+
+
 .calendar-entry {
     height: 50px;
-    margin :5px -10px 5px -10px;
+    margin: 5px -10px 5px -10px;
     border-radius: 0px;
+}
+
+@media screen and (max-width: 540px) {
+    .calendar-size{
+        width: 80% !important;
+    }
 }
 
 .calendar-empty {

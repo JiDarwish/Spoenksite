@@ -142,14 +142,12 @@ $(document).ready(function () {
         return false;
     });
 
-    width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
-
-    if($(window).width() <= 767) {
-        skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-
-    } else {
-            var s = skrollr.init();
+    var s = skrollr.init();
+    if (s.isMobile()) {
+        s.destroy();
     }
+
+
     addCalendarToHTML(calendar);
 });
 

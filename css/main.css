@@ -23,20 +23,19 @@ img {
 }
 
 .img-sponsor {
-    width:100%;
+    width: 100%;
 }
-
 
 .caption {
     /* Caption of the thumbnails */
-    color:white;
+    color: white;
 }
 
 .table-prices {
     margin: 10px;
 }
 
-.container-fluid{
+.container-fluid {
     /* Breedte van de sections */
     width: 65%;
     padding-top: 25px;
@@ -47,10 +46,9 @@ img {
     background-color: #2982de;
 }
 
-footer{
+footer {
     background-color: rgba(255, 0, 0, 0.51) !important;
 }
-
 
 .fancy-border {
     /* Soort border die om alle sections heen zit */
@@ -99,5 +97,13 @@ footer{
     .container-fluid {
         /* Breedte van de sections op kleinere schermen*/
         width: 95%;
+    }
+}
+
+@media (max-width: 600px) {
+    .calendar-size {
+        /* Breedte van de sections op kleinere schermen*/
+        margin-left: auto !important;
+        margin-right: auto !important;
     }
 }

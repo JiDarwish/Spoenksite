@@ -166,7 +166,7 @@ function createDay(dayData) {
     var html = "";
 
     html += "<span class='calendar-day-title'><b>" + dayData.dayTitle + "</b></span>";
-    html += "<div class='row calendar-day'>";
+    html += "<div class='row calendar-day col-sm-12'>";
 
     for (var i = 0; i < dayData.events.length; i++) {
         html += createEvent(dayData.events[i], i === (dayData.events.length - 1));
@@ -181,7 +181,7 @@ function createEvent(eventData, last) {
     console.log(margin);
     var html = "";
     if (eventData.name === "empty") {
-        html += "<div class='calendar-size' style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%' class='d-none d-sm-block'>";
+        html += "<div class='calendar-size d-none d-sm-block' style='width:" + ((eventData.width * 100) - margin) + "%; margin-right:" + margin + "%'>";
         html += "<div class='calendar-entry calendar-empty'>";
         html += "</div>";
         html += "</div>";

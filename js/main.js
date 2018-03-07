@@ -141,8 +141,12 @@ $(document).ready(function () {
         $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
         return false;
     });
-    var s = skrollr.init();
 
+    width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+
+    if(width > 400) {
+        var s = skrollr.init();
+    }
     addCalendarToHTML(calendar);
 });
 

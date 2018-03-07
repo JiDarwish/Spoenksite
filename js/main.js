@@ -144,8 +144,11 @@ $(document).ready(function () {
 
     width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 
-    if(width > 400) {
-        var s = skrollr.init();
+    if($(window).width() <= 767) {
+        skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+
+    } else {
+            var s = skrollr.init();
     }
     addCalendarToHTML(calendar);
 });

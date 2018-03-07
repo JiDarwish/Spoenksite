@@ -19,30 +19,6 @@ var sponsors = [
         "name": "BBQuties",
         "url": "http://www.bbquties.nl",
         "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
-    }, {
-        "name": "BBQuties",
-        "url": "http://www.bbquties.nl",
-        "img": "img/sponsors/bbquties.jpg"
     }
 
 ];
@@ -161,7 +137,10 @@ var calendar = {
 };
 
 $(document).ready(function () {
-
+    $('.smooth-goto').on('click', function() {
+        $('html, body').animate({scrollTop: $(this.hash).offset().top - 50}, 1000);
+        return false;
+    });
     var s = skrollr.init();
 
     addCalendarToHTML(calendar);

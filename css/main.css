@@ -100,7 +100,7 @@ footer {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
     .calendar-size {
         /* Breedte van de sections op kleinere schermen*/
         margin-left: auto !important;

@@ -166,7 +166,7 @@ function createDay(dayData) {
     var html = "";
 
     html += "<span class='calendar-day-title'><b>" + dayData.dayTitle + "</b></span>";
-    html += "<div class='row calendar-day col-sm-12'>";
+    html += "<div class='row calendar-day col-sm-12 mx-auto'>";
 
     for (var i = 0; i < dayData.events.length; i++) {
         html += createEvent(dayData.events[i], i === (dayData.events.length - 1));

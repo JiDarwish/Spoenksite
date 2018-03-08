@@ -15,7 +15,6 @@
     margin: 0;
     font-size: 12px;
     padding-top: 4px;
-
 }
 
 .calendar-image {
@@ -23,10 +22,7 @@
     height: 40px;
     margin: 5px;
     float: left;
-
 }
-
-
 
 .calendar-entry {
     height: 50px;

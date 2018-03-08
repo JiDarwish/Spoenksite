@@ -23,12 +23,46 @@ Ik raad Webstorm aan als text editor, maar kladblok werkt ook gewoon :)
 - Themapresentatiefilmpje
 - Programma
 - Contact (wanneer spoenk niet op Wippolder is, of de wippolder is verplaatst)
+- Calendar afstellen op jullie programma (zie beneden)
+- Sponsoren aanpassen (zie beneden)
+
+# Sponsoren
+Sponsoren worden automatisch gegenereerd bovenin main.js. Je ziet daar een array met sponsoren.
+Je kan simpelweg een sponsor toevoegen door dit stukje in de array te zetten:
+```
+{
+    "name": "<Sponsornaam>",
+    "url": "<sponsorsite>",
+    "img": "img/sponsors/<naamvanhetplaatje>.jpg"
+}
+```
+De site maakt dan automatisch een mooi lijstje aan van sponsoren.
+
+# Calendar
+Ook de calendar wordt automagisch gegenereerd in main.js. Om een event toe te voegen plaats je zo'n stukje code:
+```
+{
+    "name": "Tent opzetten",
+    "start": "19:00",
+    "width": 0.2,
+    "img": "img/calendar/castle.png"
+}
+```
+Spreekt allemaal vrij voor zichzelf denk ik zo. **Belangrijk** is dat de width van alle elementen samen op 1 uitkomt.
+Bovenin main.js staat `const CALENDAR_MARGIN = 3;` Dit geeft aan dat de margin tussen alle calendar items 3% is. **Dit wordt automatisch gedaan dus je hoeft niet zelf te gaan rekenen**
 
 
 # Wanneer je een nieuwe section toevoegt.
 - Toevoegen in de header met href zodat je er naartoe kan scrollen
 
 
+# Technische details
+##### Parallax effect
+Hiervoor gebruik ik de skrollr library. Deze is gedisabled op mobiel omdat het anders toch wel veel rekenen wordt voor zo'n klein dingetje.
+
+##### d-none en d-sm-block
+Dit is een [bootstrap 4](https://getbootstrap.com/docs/4.0/utilities/display/) truc om elementen te laten verdwijnen wanneer het scherm te klein wordt.
+Dit gebeurt voor de header en empty calendar entries. Mensen gebruiken zo'n header toch niet op mobiel.
 # Veelgestelde vragen
 
 ##### Niet echt een mooi kleurenschema voor een template, nietwaar?

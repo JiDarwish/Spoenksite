@@ -6,6 +6,8 @@ In deze repo vind je een template die je kan gebruiken om lekker snel van start 
 Het ontwerp lijkt erg op de sites van de laatste jaren, alleen wat lelijker :).
 Alle CSS bestanden staan boordevol commentaar zodat je gemakkelijk het element kan vinden dat je wilt aanpassen.
 
+**Dit template is natuurlijk maar een suggestie. Wanneer je denkt dat je iets coolers kan maken, doe het!**
+
 # Hoe download ik de site zodat ik het lokaal aan kan passen?
 Rechtsbovenaan deze pagina zie je een mooie knop met 'Clone or download', klik hier op en download als zip.
 Als je dit op je eigen laptop uitpakt en index.html opent met je favoriete browser, kan je de site in actie zien.

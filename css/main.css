@@ -43,7 +43,6 @@ img {
     padding-bottom: 50px;
 }
 
-
 .container-background-color {
     background-color: #2982de;
 }
@@ -84,24 +83,13 @@ footer {
     font-size: 200%;
 }
 
-/* Uiterlijk van een calendar event*/
-.timeslot {
-    float: left;
-    margin: 5px;
-    padding: 5px 0px 5px 5px;
-    color: white;
-    background: #a64cd5;
-    width: 280px;
-    height: 50px;
-    font-size: 12px;
-}
-
 /* Deze dingen gelden alleen voor kleine schermen zoals mobiel (kleiner dan 992px) */
 @media (max-width: 992px) {
     .container-fluid {
         /* Breedte van de sections op kleinere schermen*/
         width: 95%;
     }
+
     .calendar-size {
         margin-left: auto !important;
         margin-right: auto !important;

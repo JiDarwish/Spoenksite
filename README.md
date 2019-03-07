@@ -57,6 +57,26 @@ Bovenin main.js staat `const CALENDAR_MARGIN = 3;` Dit geeft aan dat de margin t
 # Wanneer je een nieuwe section toevoegt.
 - Toevoegen in de header met href zodat je er naartoe kan scrollen
 
+# Het online zetten van de Spoenksite
+
+Om de spoenksite bereikbaar te maken moet je via ftp bestanden sturen naar de punchserver. De makkelijkste manier om dit te doen is met het programma 'Filezilla' (https://filezilla-project.org/download.php?platform=win64)
+
+Open het programma en gebruik de volgende inloggegevens:
+host: sftp://spoenk.punch.tudelft.nl
+username: spoenksite
+password: <kijk in het agg of vraag de cia>
+port: 22
+
+Na een tijdje zie je in de rechtertab 'remote site' de folderstructuur van de punchserver. Daaronder zie je de bestanden.
+Rechterklik op de www map en maak een nieuwe map genaamd <jouw_jaar> (bijvoorbeeld 2036).
+LET OP: vanaf de volgende stap zijn je bestanden voor iedereen te zien op de punchsite. 
+Sleep alle bestanden van de website naar deze map om ze up te loaden. 
+
+Je kan nu je website zien op spoenk.punch.tudelft.nl/<jouw_jaar>. Maar spoenk.punch.tudelft.nl zal nog redirecten naar <jouw_jaar-1>. Om dit te fixen moet je de `index.html` aanpassen. Die kan je downloaden, alle referenties naar het oude jaar veranderen in de juiste, en daarna weer uploaden.
+
+Als je nu naar spoenk.punch.tudelft.nl gaat, zou je jouw site online moeten zien!
+
+Mocht je verder nog vragen hebben, stuur een mail naar de CIA.
 
 # Technische details
 ##### Parallax effect

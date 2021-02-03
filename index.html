@@ -1,397 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <!--TODO Update title-->
-    <title>SPOENK</title>
+    <title>SPOENK 2021</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
 
     <script
-            src="https://code.jquery.com/jquery-3.3.1.min.js"
-            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-            crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
 
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="shortcut icon" type="image/png" href="img/favicon.gif"/>
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/calendar.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.gif" />
     <script src="js/scrolling-nav.js"></script>
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     <script src="js/main.js"></script>
-</head>
-<body id="page-top" data-0="background-position:0px 0px;" data-end="background-position:0px -200px;">
-
-<div id="skrollr-body">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top d-none d-md-block" id="mainNav">
+  </head>
+  <body
+    id="page-top"
+    data-0="background-position:0px 0px;"
+    data-end="background-position:0px -200px;"
+  >
+    <div id="skrollr-body">
+      <!-- Navigation -->
+      <nav
+        class="navbar navbar-expand-sm navbar-dark fixed-top d-none d-md-block"
+        id="mainNav"
+      >
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <!-- TODO Update datum-->
-                Spoenk DATUM
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#informatie">Informatie</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#watisspoenk">Wat is spoenk?</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#inschrijven">Inschrijven</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#programma">Programma</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#foto">Foto's</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger smooth-goto" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <!-- TODO Check correct datum-->
+            Spoenk 14-16 mei
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger smooth-goto"
+                  href="#informatie"
+                  >Informatie</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger smooth-goto"
+                  href="#watisspoenk"
+                  >Wat is spoenk?</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger smooth-goto"
+                  href="#inschrijven"
+                  >Inschrijven</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger smooth-goto"
+                  href="#programma"
+                  >Programma</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link js-scroll-trigger smooth-goto" href="#foto"
+                  >Foto's</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link js-scroll-trigger smooth-goto"
+                  href="#contact"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav>
 
-    <header>
+      <header>
         <div class="container">
-            <div class="row col-lg-8 offset-lg-2 mx-auto">
-                <!-- TODO Update logo-->
-                <img src="img/logo.png">
-            </div>
+          <img src="img/logo.png" />
         </div>
-    </header>
+      </header>
 
-    <!-- TODO Update text -->
-    <!-- Algemeen -->
-    <section id="informatie">
+      <!-- TODO Update text -->
+      <!-- Algemeen -->
+      <section id="informatie">
         <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 mx-auto ">
-                    <p class="text-center text-big"><b>Informatie</b></p>
-                    <hr>
-                    <p class="lead">Intro text in lead omdat dat lekker de aandacht trekt. Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit. Sed laoreet urna quis erat sodales, at varius elit sodales. Nullam
-                        laoreet auctor leo vitae fringilla. Nulla lobortis finibus tortor a vulputate. Fusce finibus
-                        porta
-                        leo, lacinia lacinia eros aliquam quis. Suspendisse potenti. In commodo tortor at placerat
-                        consequat. Cras gravida turpis non ultrices gravida. Ut quam velit, facilisis sed pretium in,
-                        commodo in mi. Sed eu libero venenatis, sagittis purus eget, vulputate odio. Vivamus fermentum
-                        sem
-                        id hendrerit placerat. Nam congue nunc nec lorem bibendum convallis. Donec felis lacus, euismod
-                        id
-                        iaculis nec, ullamcorper eget est. Sed ut magna et ipsum tristique consequat. Fusce facilisis
-                        iaculis ligula, non interdum ante euismod vitae.</p>
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="text-center text-big"><b>Informatie</b></p>
+              <hr />
+              <p class="lead">
+                Intro text in lead omdat dat lekker de aandacht trekt. Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit. Sed laoreet
+                urna quis erat sodales, at varius elit sodales. Nullam laoreet
+                auctor leo vitae fringilla. Nulla lobortis finibus tortor a
+                vulputate. Fusce finibus porta leo, lacinia lacinia eros aliquam
+                quis. Suspendisse potenti. In commodo tortor at placerat
+                consequat. Cras gravida turpis non ultrices gravida. Ut quam
+                velit, facilisis sed pretium in, commodo in mi. Sed eu libero
+                venenatis, sagittis purus eget, vulputate odio. Vivamus
+                fermentum sem id hendrerit placerat. Nam congue nunc nec lorem
+                bibendum convallis. Donec felis lacus, euismod id iaculis nec,
+                ullamcorper eget est. Sed ut magna et ipsum tristique consequat.
+                Fusce facilisis iaculis ligula, non interdum ante euismod vitae.
+              </p>
 
-                    <p class="text-center text-big">Dan, dan en dan in Delft!</p>
+              <p class="text-center text-big">Dan, dan en dan in Delft!</p>
 
-                    <div class="row">
-                        <img src="img/plaatje1.png" class="col-xl-5 col-sm-10 img-fluid mx-auto">
+              <div class="row">
+                <img
+                  src="img/plaatje1.png"
+                  class="col-xl-5 col-sm-10 img-fluid mx-auto"
+                />
 
-                        <div class="col-lg-7 col-md-12 mx-auto">
-                            <p class="text-center text-medium"><b>Header</b></p>
-                            <p>Kijk en dan past hier dus precies een mooi verhaal over het plaatje. Als je de verhouding
-                                niet mooi vindt, kan je gewoon een beetje spelen met de breedte van de columns.
-                                Hartstikke
-                                handig dat bootstrap.
-                                Mag je wel nog even kutten met de hoogte van het plaatje, het kan zijn dat het er niet
-                                fantastisch uit gaat zien omdat die header het verpest, maar dat ligt een beetje aan
-                                hoeveel
-                                tekst je hier neer gooit.</p>
-                        </div>
-                    </div>
-
-                    <br><br>
-                    <div class="row">
-                        <div class="col-lg-7 col-md-12 mx-auto">
-                            <p class="text-center text-medium"><b>Andere Header</b></p>
-                            <p>En nu zit het plaatje ineens aan de andere kant. Nouja zeg, het lijkt wel magie... Cras
-                                gravida turpis non ultrices gravida. Ut quam velit, facilisis sed pretium in,
-                                commodo in mi. Sed eu libero venenatis, sagittis purus eget, vulputate odio. Vivamus
-                                fermentum sem
-                                id hendrerit placerat. Nam congue nunc nec lorem bibendum convallis. Donec felis lacus,
-                                euismod id
-                                iaculis nec, ullamcorper eget est. Sed ut magna et ipsum tristique consequat. Fusce
-                                facilisis
-                                iaculis ligula, non interdum ante euismod vitae</p>
-                        </div>
-                        <img src="img/plaatje2.png" class="col-xl-5 col-sm-10 img-fluid mx-auto">
-                    </div>
-
-                    <div class="row">
-                        <img src="img/plaatje3.png" class="col-xl-5 col-sm-10 img-fluid mx-auto">
-
-                        <div class="col-lg-7 col-md-12 mx-auto">
-                            <p class="text-center text-medium"><b>Laatste header</b></p>
-                            <p>Nu vind ik het wel mooi geweest. Lorem ipsum dolor sit amet,
-                                consectetur adipiscing elit. Sed laoreet urna quis erat sodales, at varius elit sodales.
-                                Nullam
-                                laoreet auctor leo vitae fringilla. Nulla lobortis finibus tortor a vulputate. Fusce
-                                finibus
-                                porta
-                                leo, lacinia lacinia eros aliquam quis. Suspendisse potenti. In commodo tortor at
-                                placerat
-                                consequat. Cras gravida turpis non ultrices gravida.</p>
-                        </div>
-                    </div>
+                <div class="col-lg-7 col-md-12 mx-auto">
+                  <p class="text-center text-medium"><b>Header</b></p>
+                  <p>
+                    Kijk en dan past hier dus precies een mooi verhaal over het
+                    plaatje. Als je de verhouding niet mooi vindt, kan je gewoon
+                    een beetje spelen met de breedte van de columns. Hartstikke
+                    handig dat bootstrap. Mag je wel nog even kutten met de
+                    hoogte van het plaatje, het kan zijn dat het er niet
+                    fantastisch uit gaat zien omdat die header het verpest, maar
+                    dat ligt een beetje aan hoeveel tekst je hier neer gooit.
+                  </p>
                 </div>
-            </div>
-        </div>
-    </section>
+              </div>
 
-    <!-- TODO Update video -->
-    <!-- Wat is spoenk -->
-    <section id="watisspoenk">
+              <br /><br />
+              <div class="row">
+                <div class="col-lg-7 col-md-12 mx-auto">
+                  <p class="text-center text-medium"><b>Andere Header</b></p>
+                  <p>
+                    En nu zit het plaatje ineens aan de andere kant. Nouja zeg,
+                    het lijkt wel magie... Cras gravida turpis non ultrices
+                    gravida. Ut quam velit, facilisis sed pretium in, commodo in
+                    mi. Sed eu libero venenatis, sagittis purus eget, vulputate
+                    odio. Vivamus fermentum sem id hendrerit placerat. Nam
+                    congue nunc nec lorem bibendum convallis. Donec felis lacus,
+                    euismod id iaculis nec, ullamcorper eget est. Sed ut magna
+                    et ipsum tristique consequat. Fusce facilisis iaculis
+                    ligula, non interdum ante euismod vitae
+                  </p>
+                </div>
+                <img
+                  src="img/plaatje2.png"
+                  class="col-xl-5 col-sm-10 img-fluid mx-auto"
+                />
+              </div>
+
+              <div class="row">
+                <img
+                  src="img/plaatje3.png"
+                  class="col-xl-5 col-sm-10 img-fluid mx-auto"
+                />
+
+                <div class="col-lg-7 col-md-12 mx-auto">
+                  <p class="text-center text-medium"><b>Laatste header</b></p>
+                  <p>
+                    Nu vind ik het wel mooi geweest. Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit. Sed laoreet urna quis erat
+                    sodales, at varius elit sodales. Nullam laoreet auctor leo
+                    vitae fringilla. Nulla lobortis finibus tortor a vulputate.
+                    Fusce finibus porta leo, lacinia lacinia eros aliquam quis.
+                    Suspendisse potenti. In commodo tortor at placerat
+                    consequat. Cras gravida turpis non ultrices gravida.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO Update video -->
+      <!-- Wat is spoenk -->
+      <section id="watisspoenk">
         <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 mx-auto ">
-                    <p class="text-center text-big"><b>Wat is spoenk?</b></p>
-                    <hr>
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="text-center text-big"><b>Wat is spoenk?</b></p>
+              <hr />
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/kredJvNlG-g"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TODO Update link and prices -->
+      <!-- Inschrijven -->
+      <section id="inschrijven">
+        <div class="container-fluid container-background-color fancy-border">
+          <div class="row">
+            <div class="col-lg-9 col-sm-12 mx-auto">
+              <p class="text-center text-big"><b>Inschrijven</b></p>
+              <hr />
+              <h1 class="text-center">
+                De inschrijvingen gaan open op dan en dan
+              </h1>
+              <br />
+              <p>
+                Algemene informatie over de inschrijvingen, even weghalen als ze
+                nog niet open zijn ;) De buttons en tabel zijn nog niet zo mooi,
+                maar daar kan je ook wel iets mooiers van maken.
+              </p>
+              <br />
+              <div class="row">
+                <div class="col-md-5 col-sm-9 mx-auto">
+                  <table class="table-prices">
+                    <thead>
+                      <b>Toernooikosten per persoon</b>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td><b>Gehele weekend</b></td>
+                        <td><b>&euro; 10</b></td>
+                      </tr>
+                      <tr>
+                        <td>Vrijdag feest</td>
+                        <td>&euro; 10</td>
+                      </tr>
+                      <tr>
+                        <td>Zaterdag</td>
+                        <td>&euro; 10</td>
+                      </tr>
+                      <tr>
+                        <td>Zondag volleybal</td>
+                        <td>&euro; 10</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a
+                    href="https://www.linknaarjeinschrijfformulier.nl"
+                    target="_blank"
+                  >
+                    <button class="btn btn-success">
+                      Individuele inschrijving
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.linknaarjeinschrijfformulier.nl"
+                    target="_blank"
+                  >
+                    <button class="btn btn-success">Teaminschrijving</button>
+                  </a>
+                </div>
+              </div>
+              <br />
+              <div class="row">
+                Als je nog vragen hebt over de inschrijvingen, stuur gerust een
+                mailtje naar spoenk@punch.tudelft.nl
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Programma -->
+      <section id="programma">
+        <div class="container-fluid container-background-color fancy-border">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="text-center text-big"><b>Programma</b></p>
+              <hr />
+              <div class="calendar-body">
+                <!-- Generated in main.js-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Themapresentatie -->
+      <section id="themapresentatie">
+        <div class="container-fluid container-background-color fancy-border">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="text-center text-big"><b>Themapresentatie</b></p>
+              <hr />
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe
+                  class="embed-responsive-item"
+                  src="https://www.youtube.com/embed/wZxPyWlmEmw"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Foto's -->
+      <section id="foto">
+        <div class="container-fluid container-background-color fancy-border">
+          <div class="row">
+            <div class="col-lg-9 mx-auto">
+              <p class="text-center text-big"><b>Foto's</b></p>
+              <hr />
+
+              <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="thumbnail">
+                    <a
+                      target="_BLANK"
+                      href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn"
+                    >
+                      <img
+                        class="scale-image lazy"
+                        src="img/thumbnail/vrijdag.jpg"
+                      />
+                      <div class="caption">
+                        Vrijdag 2017
+                        <p>01-06-2017</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="thumbnail">
+                    <a
+                      target="_BLANK"
+                      href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn"
+                    >
+                      <img
+                        class="scale-image lazy"
+                        src="img/thumbnail/zaterdag.jpg"
+                      />
+                      <div class="caption">
+                        Zaterdag 2017
+                        <p>02-06-2017</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="thumbnail">
+                    <a
+                      target="_BLANK"
+                      href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn"
+                    >
+                      <img
+                        class="scale-image lazy"
+                        src="img/thumbnail/zondag.jpg"
+                      />
+                      <div class="caption">
+                        Zondag 2017
+                        <p>03-06-2017</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3">
+                  <div class="thumbnail">
+                    <a
+                      target="_BLANK"
+                      href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn"
+                    >
+                      <img
+                        class="scale-image lazy"
+                        src="img/thumbnail/topdesk.jpg"
+                      />
+                      <div class="caption">
+                        Topdesk
+                        <p>03-06-2017</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stop..... -->
+
+      <!-- Contact -->
+      <section id="contact">
+        <div class="container-fluid container-background-color fancy-border">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <p class="text-center text-big"><b>Contact</b></p>
+              <hr />
+              <div class="row">
+                <div class="col-md-4">
+                  <dl class="dl-horizontal">
+                    <dt>Adres</dt>
+                    <dd>Rijksstraatweg 9 <br />2628 GZ Delft</dd>
+                    <dt>Telefoon</dt>
+                    <dd>+316 24467580</dd>
+                    <dt>Email</dt>
+                    <dd>spoenk@punch.tudelft.nl</dd>
+                    <dt>Bereikbaarheid</dt>
+                    <dd>8 min. lopen vanaf bushalte Nassauplein (Lijn 37)</dd>
+                  </dl>
+
+                  <img src="img/logos/punch.png" alt="" width="100%" />
+                  <img src="img/logos/tudelft.png" alt="" width="100%" />
+                </div>
+
+                <div class="col-md-7">
+                  <div class="shadow_container">
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/kredJvNlG-g"></iframe>
+                      <iframe
+                        class="embed-responsive-item"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.061569144583!2d4.3873490000000075!3d52.00575600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5f57d992b69%3A0x27b34a28ed66a26d!2sVoetbalvereniging+SV+Wippolder!5e0!3m2!1sen!2snl!4v1426845606093"
+                        style="border: 0"
+                      ></iframe>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-
-    <!-- TODO Update link and prices -->
-    <!-- Inschrijven -->
-    <section id="inschrijven">
-        <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 col-sm-12 mx-auto ">
-                    <p class="text-center text-big"><b>Inschrijven</b></p>
-                    <hr>
-                    <h1 class="text-center">De inschrijvingen gaan open op dan en dan</h1>
-                    <br>
-                    <p>Algemene informatie over de inschrijvingen, even weghalen als ze nog niet open zijn ;) De buttons
-                        en tabel zijn nog niet zo mooi, maar daar kan je ook wel iets mooiers van maken.</p>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-5 col-sm-9 mx-auto">
-                            <table class="table-prices">
-                                <thead>
-                                <b>Toernooikosten per persoon</b>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td><b>Gehele weekend</b></td>
-                                    <td><b>&euro; 10</b></td>
-                                </tr>
-                                <tr>
-                                    <td>Vrijdag feest</td>
-                                    <td>&euro; 10</td>
-                                </tr>
-                                <tr>
-                                    <td>Zaterdag</td>
-                                    <td>&euro; 10</td>
-                                </tr>
-                                <tr>
-                                    <td>Zondag volleybal</td>
-                                    <td>&euro; 10</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                            <a href="https://www.linknaarjeinschrijfformulier.nl" target="_blank">
-                                <button class="btn btn-success">Individuele inschrijving</button>
-                            </a> <a href="https://www.linknaarjeinschrijfformulier.nl" target="_blank">
-                            <button class="btn btn-success">Teaminschrijving</button>
-                        </a>
-                        </div>
-
-
-                    </div>
-                    <br>
-                    <div class="row">
-                        Als je nog vragen hebt over de inschrijvingen, stuur gerust een mailtje naar
-                        spoenk@punch.tudelft.nl
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Programma -->
-    <section id="programma">
-
-        <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 mx-auto ">
-                    <p class="text-center text-big"><b>Programma</b></p>
-                    <hr>
-                    <div class="calendar-body">
-                        <!-- Generated in main.js-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Themapresentatie -->
-    <section id="themapresentatie">
-        <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 mx-auto ">
-                    <p class="text-center text-big"><b>Themapresentatie</b></p>
-                    <hr>
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wZxPyWlmEmw"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Foto's -->
-    <section id="foto">
-        <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-9 mx-auto ">
-                    <p class="text-center text-big"><b>Foto's</b></p>
-                    <hr>
-
-                    <div class="row">
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="thumbnail">
-                                <a target="_BLANK"
-                                   href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn">
-                                    <img class="scale-image lazy" src="img/thumbnail/vrijdag.jpg">
-                                    <div class="caption">
-                                        Vrijdag 2017
-                                        <p>01-06-2017</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="thumbnail">
-                                <a target="_BLANK"
-                                   href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn">
-                                    <img class="scale-image lazy" src="img/thumbnail/zaterdag.jpg">
-                                    <div class="caption">
-                                        Zaterdag 2017
-                                        <p>02-06-2017</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="thumbnail">
-                                <a target="_BLANK"
-                                   href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn">
-                                    <img class="scale-image lazy" src="img/thumbnail/zondag.jpg">
-                                    <div class="caption">
-                                        Zondag 2017
-                                        <p>03-06-2017</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-3">
-                            <div class="thumbnail">
-                                <a target="_BLANK"
-                                   href="https://photos.google.com/share/AF1QipPuDTZYvHC2Gzsoc6Z1iHZFM69ZZnrcuCoo5mJilVzyP_nNORYCzOoP9AnI9JsI1w?key=RnJOS1BueTI1ampCM0JXRVdqSDBHdksxWWlVVjJn">
-                                    <img class="scale-image lazy" src="img/thumbnail/topdesk.jpg">
-                                    <div class="caption">
-                                        Topdesk
-                                        <p>03-06-2017</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stop..... -->
-
-    <!-- Contact -->
-    <section id="contact">
-        <div class="container-fluid container-background-color fancy-border">
-            <div class="row">
-                <div class="col-lg-12 mx-auto ">
-                    <p class="text-center text-big"><b>Contact</b></p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <dl class="dl-horizontal">
-                                <dt>Adres</dt>
-                                <dd>Rijksstraatweg 9 <br>2628 GZ Delft</dd>
-                                <dt>Telefoon</dt>
-                                <dd>+316 24467580</dd>
-                                <dt>Email</dt>
-                                <dd>spoenk@punch.tudelft.nl</dd>
-                                <dt>Bereikbaarheid</dt>
-                                <dd>8 min. lopen vanaf bushalte Nassauplein (Lijn 37)</dd>
-                            </dl>
-
-                            <img src="img/logos/punch.png" alt="" width="100%">
-                            <img src="img/logos/tudelft.png" alt="" width="100%">
-                        </div>
-
-                        <div class="col-md-7">
-                            <div class="shadow_container">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe class="embed-responsive-item"
-                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.061569144583!2d4.3873490000000075!3d52.00575600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5f57d992b69%3A0x27b34a28ed66a26d!2sVoetbalvereniging+SV+Wippolder!5e0!3m2!1sen!2snl!4v1426845606093"
-                                            style="border:0"></iframe>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <footer class="text-center" id="partners">
+      <footer class="text-center" id="partners">
         <div class="footer-above">
-            <div class="container-fluid footer-fluid">
-                <div class="row">
-                    <div class="col-lg-12 mx-auto ">
-                        <p class="text-center text-big"><b>Sponsoren</b></p>
-                        <hr>
-                        <div class="row sponsor-body">
-                            <!-- Gegenereerd in main.js-->
-                        </div>
-                    </div>
+          <div class="container-fluid footer-fluid">
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <p class="text-center text-big"><b>Sponsoren</b></p>
+                <hr />
+                <div class="row sponsor-body">
+                  <!-- Gegenereerd in main.js-->
                 </div>
-
+              </div>
             </div>
-            <div class="footer-below">
-
-            </div>
+          </div>
+          <div class="footer-below"></div>
         </div>
-    </footer>
-
-</div>
-
-
-</body>
+      </footer>
+    </div>
+  </body>
 </html>

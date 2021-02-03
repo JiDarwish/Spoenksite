@@ -1,106 +1,115 @@
 body {
-    /* Achtergrond van de pagina */
-    background: url("../img/achtergrond.png") center fixed;
-    background-size: 100%;
-    background-color: #204F98;
-    font-size: 20px;
-    /*font-family: "Arial Black", serif;*/
+  /* Achtergrond van de pagina */
+  background: url("../img/achtergrond.jpeg") center fixed;
+  background-size: 100%;
+  background-color: #204f98;
+  font-size: 20px;
+  /*font-family: "Arial Black", serif;*/
 }
 
 section {
-    /* De ruimte tussen elke section */
-    margin-bottom: 100px;
+  /* De ruimte tussen elke section */
+  margin-bottom: 100px;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Lekker wat ruimte tussen sponsoren */
 .sponsor {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .img-sponsor {
-    width: 100%;
+  width: 100%;
 }
 
 .caption {
-    /* Caption of the thumbnails */
-    color: white;
+  /* Caption of the thumbnails */
+  color: white;
 }
 
 .table-prices {
-    margin: 10px;
+  margin: 10px;
 }
 
 .container-fluid {
-    /* Breedte van de sections */
-    width: 65%;
-    padding-top: 25px;
-    padding-bottom: 50px;
+  /* Breedte van de sections */
+  width: 65%;
+  padding-top: 25px;
+  padding-bottom: 50px;
 }
 
 .container-background-color {
-    background-color: #2982de;
+  background-color: #2982de;
 }
 
 footer {
-    background-color: rgba(255, 0, 0, 0.51) !important;
+  background-color: rgba(255, 0, 0, 0.51) !important;
 }
 
 .fancy-border {
-    /* Soort border die om alle sections heen zit */
-    border: 5px dashed #152c61;
-    border-radius: 5px;
+  /* Soort border die om alle sections heen zit */
+  border: 5px dashed #152c61;
+  border-radius: 5px;
 }
 
 #mainNav {
-    background-color: #1830de
+  background-color: #1830de;
 }
 
 .nav-link {
-    /* Kleur van de tekst in de nav-bar */
-    color: white !important;
+  /* Kleur van de tekst in de nav-bar */
+  color: white !important;
 }
 
 .navbar-brand {
-    /* Kleur van de tekst in de navbar linksboven */
-    color: white !important
+  /* Kleur van de tekst in de navbar linksboven */
+  color: white !important;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .text-big {
-    font-size: 250%;
-    overflow: hidden
+  font-size: 250%;
+  overflow: hidden;
 }
 
 .text-medium {
-    font-size: 200%;
+  font-size: 200%;
 }
 
 /* Deze dingen gelden alleen voor kleine schermen zoals mobiel (kleiner dan 992px) */
 @media (max-width: 992px) {
-    .container-fluid {
-        /* Breedte van de sections op kleinere schermen*/
-        width: 95%;
-    }
+  .container-fluid {
+    /* Breedte van de sections op kleinere schermen*/
+    width: 95%;
+  }
 
-    .calendar-size {
-        margin-left: auto !important;
-        margin-right: auto !important;
-    }
+  .calendar-size {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 
-    .text-big {
-        font-size: 175%;
-    }
+  .text-big {
+    font-size: 175%;
+  }
 
-    .text-medium {
-        font-size: 125%;
-    }
+  .text-medium {
+    font-size: 125%;
+  }
+}
+
+/* new */
+
+/* Cemter the logo properly */
+header > .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }

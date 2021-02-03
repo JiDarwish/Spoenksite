@@ -1,10 +1,9 @@
 header {
-    padding: 154px 0 100px;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
-    header {
-        padding: 26px 0 100px !important;
-    }
+  header {
+    padding: 26px 0 100px !important;
+  }
 }
-

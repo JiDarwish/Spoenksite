@@ -1,51 +1,50 @@
 /* Zorgen dat je niet kan selecteren */
 .calendar-day {
-    -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-    -khtml-user-select: none; /* Konqueror HTML */
-    -moz-user-select: none; /* Firefox */
-    -ms-user-select: none; /* Internet Explorer/Edge */
-    user-select: none;
-    /* Non-prefixed version, currently
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently
                                      supported by Chrome and Opera */
 }
 
 .calendar-description {
-    color: white;
-    margin: 0;
-    font-size: 12px;
-    padding-top: 4px;
+  color: var(--black-color);
+  margin: 0;
+  font-size: 12px;
+  padding-top: 4px;
 }
 
 .calendar-image {
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    float: left;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  float: left;
 }
 
 .calendar-entry {
-    height: 50px;
-    margin: 5px -10px 5px -10px;
-    border-radius: 0px;
+  height: 50px;
+  margin: 5px -10px 5px -10px;
+  border-radius: 0px;
 }
 
 .calendar-empty {
-    background-color: #bbbbbb;
+  background-color: var(--black-color);
 }
 
 .calendar-event {
-    vertical-align: center;
-    background-color: #a34eb8;
+  vertical-align: center;
+  background-color: var(--beige-color);
 }
 
 .calendar-event:hover {
-    background-color: #8a469f;
+  background-color: var(--grey-color);
 }
 
 @media screen and (max-width: 540px) {
-    .calendar-size {
-        width: 80% !important;
-    }
+  .calendar-size {
+    width: 80% !important;
+  }
 }
-

@@ -1,5 +1,6 @@
 :root {
   --black-color: #31323a;
+  --black-color-transparent: rgba(64, 49, 49, 0.8);
   --light-black-color: #4d4b58;
   --grey-color: #e9efff;
   --beige-color: #ffeeca;
@@ -53,12 +54,11 @@ img {
 }
 
 .container-background-color {
-  background-color: var(--black-color);
+  background-color: var(--black-color-transparent);
 }
 
 footer {
   background-color: var(--light-black-color) !important;
-  opacity: 0.8;
 }
 
 .fancy-border {

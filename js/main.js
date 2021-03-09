@@ -4,24 +4,9 @@ const CALENDAR_MARGIN = 3;
 // Add sponsors here and they will appear in the footer.
 var sponsors = [
   {
-    name: "BBQuties",
-    url: "http://www.bbquties.nl",
-    img: "img/sponsors/bbquties.jpg",
-  },
-  {
-    name: "BBQuties",
-    url: "http://www.bbquties.nl",
-    img: "img/sponsors/bbquties.jpg",
-  },
-  {
-    name: "BBQuties",
-    url: "http://www.bbquties.nl",
-    img: "img/sponsors/bbquties.jpg",
-  },
-  {
-    name: "BBQuties",
-    url: "http://www.bbquties.nl",
-    img: "img/sponsors/bbquties.jpg",
+    name: "UbiOps",
+    url: "https://ubiops.com",
+    img: "img/sponsors/ubiops.png",
   },
 ];
 
@@ -40,29 +25,8 @@ function createSponsor(sponsorData) {
 
 // Add events to this calendar and change the width to make it look perfect.
 var calendar = {
-  friday: {
-    dayTitle: "Vrijdag 14 mei",
-    events: [
-      {
-        name: "empty",
-        width: 0.6,
-      },
-      {
-        name: "Tent opzetten",
-        start: "19:00",
-        width: 0.2,
-        img: "img/calendar/castle.png",
-      },
-      {
-        name: "Feest",
-        start: "21:00",
-        width: 0.2,
-        img: "img/calendar/castle.png",
-      },
-    ],
-  },
   saturday: {
-    dayTitle: "Zaterdag 15 mei",
+    dayTitle: "Zaterdag 29 mei",
     events: [
       {
         name: "Ontbijten",
@@ -91,19 +55,19 @@ var calendar = {
       {
         name: "BBQ",
         start: "18:00",
-        width: 0.15,
+        width: 0.12,
         img: "img/calendar/bbq.png",
       },
       {
-        name: "Themafeest",
-        start: "21:30",
-        width: 0.15,
-        img: "img/calendar/bbq.png",
+        name: "Zittende borrel",
+        start: "20:30",
+        width: 0.18,
+        img: "img/calendar/beer.png",
       },
     ],
   },
   sunday: {
-    dayTitle: "Zondag 16 mei",
+    dayTitle: "Zondag 30 mei",
     events: [
       {
         name: "Ontbijten",
@@ -133,7 +97,7 @@ var calendar = {
         name: "Prijsuitreiking",
         start: "18:00",
         width: 0.15,
-        img: "img/calendar/bbq.png",
+        img: "img/calendar/bal.png",
       },
       {
         name: "empty",
@@ -162,7 +126,7 @@ $(document).ready(function () {
 
 function addCalendarToHTML(calendar) {
   var html = "";
-  html += createDay(calendar.friday);
+  // html += createDay(calendar.friday);
   html += createDay(calendar.saturday);
   html += createDay(calendar.sunday);
   console.log(html);

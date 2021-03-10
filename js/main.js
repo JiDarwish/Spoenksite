@@ -29,15 +29,9 @@ var calendar = {
     dayTitle: "Zaterdag 29 mei",
     events: [
       {
-        name: "Ontbijten",
-        start: "9:00",
-        width: 0.15,
-        img: "img/calendar/coffee.png",
-      },
-      {
         name: "Wedstrijden",
-        start: "10:00",
-        width: 0.2,
+        start: "09:00",
+        width: 0.35,
         img: "img/calendar/bal.png",
       },
       {
@@ -70,15 +64,9 @@ var calendar = {
     dayTitle: "Zondag 30 mei",
     events: [
       {
-        name: "Ontbijten",
-        start: "9:00",
-        width: 0.15,
-        img: "img/calendar/coffee.png",
-      },
-      {
         name: "Wedstrijden",
-        start: "10:00",
-        width: 0.2,
+        start: "09:00",
+        width: 0.35,
         img: "img/calendar/bal.png",
       },
       {

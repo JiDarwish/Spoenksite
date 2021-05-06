@@ -1,475 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
 
-    <title>SPOENK 2021</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 
-    <!-- font -->
-    <link rel="stylesheet" href="https://use.typekit.net/cuf1swv.css" />
+  <title>SPOENK 2021</title>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+  <!-- font -->
+  <link rel="stylesheet" href="https://use.typekit.net/cuf1swv.css" />
 
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="css/navbar.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/calendar.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.gif" />
-    <!-- font -->
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
+
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/calendar.css" />
+  <link rel="shortcut icon" type="image/png" href="img/favicon.gif" />
+  <!-- font -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap"
       rel="stylesheet"
     /> -->
-    <script src="js/scrolling-nav.js"></script>
-    <script type="text/javascript" src="js/skrollr.min.js"></script>
-    <script src="js/main.js"></script>
-  </head>
-  <body
-    id="page-top"
-    data-0="background-position:0px 0px;"
-    data-end="background-position:0px -200px;"
-  >
-    <div id="skrollr-body">
-      <!-- Navigation -->
-      <nav
-        class="navbar navbar-expand-sm navbar-dark fixed-top d-none d-md-block"
-        id="mainNav"
-      >
-        <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <!-- TODO Check correct datum-->
-            Spoenk 29-30 mei
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarResponsive"
-            aria-controls="navbarResponsive"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a
-                  class="nav-link js-scroll-trigger smooth-goto"
-                  href="#informatie"
-                  >Informatie</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link js-scroll-trigger smooth-goto"
-                  href="#inschrijven"
-                  >Inschrijven</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link js-scroll-trigger smooth-goto"
-                  href="#programma"
-                  >Programma</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger smooth-goto" href="#themapresentatie"
-                  >Themapresentatie</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link js-scroll-trigger smooth-goto" href="#foto"
-                  >Foto's</a
-                >
-              </li>              
-              <li class="nav-item">
-                <a
-                  class="nav-link js-scroll-trigger smooth-goto"
-                  href="#contact"
-                  >Contact</a
-                >
-              </li>
-            </ul>
-          </div>
+  <script src="js/scrolling-nav.js"></script>
+  <script type="text/javascript" src="js/skrollr.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body id="page-top" data-0="background-position:0px 0px;" data-end="background-position:0px -200px;">
+  <div id="skrollr-body">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top d-none d-md-block" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <!-- TODO Check correct datum-->
+          Spoenk 2021
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#informatie">Informatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#inschrijven">Inschrijven</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#programma">Programma</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#themapresentatie">Themapresentatie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#foto">Foto's</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger smooth-goto" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
-      <header>
-        <div class="container">
-          <img src="img/logos/logo.png" />
-        </div>
-      </header>
+    <header>
+      <div class="container">
+        <img src="img/logos/logo.png" />
+      </div>
+    </header>
 
-      <!-- TODO Update text -->
-      <!-- Algemeen -->
-      <section>
-        <div class="container-fluid container-background-color intro-info">
-          <div class="row">
-            <div class="col-lg-9 mx-auto">
-              <p class="text-center text-big"><b>Welkom</b></p>
-              <!-- TODO remove or not? -->
-              <hr class="horizontal-seperator" />
-              <p>
-                Welkom op de website van SPOENK! SPOENK is een groot
-                grasvolleybaltoernooi dat elk jaar wordt georganiseerd door de
-                Externe Toernooi Commissie van D.S.V.V. "Punch" waar je kunt
-                genieten van volleyballen en rocken op je favoriete Rock 'n Roll
-                nummers want het thema voor dit jaar is:
-              </p>
 
-              <p class="text-center text-big thema-line">ROCK 'N ROLL SPOENK</p>
-            </div>
-          </div>
-        </div>
 
-        <div class="container-fluid container-background-color">
+    <!-- TODO Update text -->
+    <!-- Algemeen -->
+    <section>
+      <div class="container-fluid container-background-color intro-info">
+        <div class="row">
           <div class="col-lg-9 mx-auto">
-            <p class="text-center text-big"><b>Corona Informatie</b></p>
+            <p class="text-center text-big"><b>Belangrijke announcement</b></p>
+            <!-- TODO remove or not? -->
             <hr class="horizontal-seperator" />
             <p>
-              Wij kunnen niet met zekerheid zeggen of, in welke mate, SPOENK dit
-              jaar doorgaat op de geplande data (29-30 mei). Dit is afhankelijk
-              van de op het moment geldende maatregelen.
+              Spoenk in mei gaat niet door, we proberen dit te verplaatsen naar dat
+              weekend na de vakantie.
             </p>
+            <p>We proberen een alternatief programma te organiseren op die zondag in mei,
+              hier kan je alleen aan mee doen als je lid bent en 27 jaar of jonger
+              (teams van 4-5).</p>
             <p>
               Wij zijn hard aan het werk om alle mogelijkheden te onderzoeken en
               houden jullie op de hoogte zodra er meer informatie is.
             </p>
+
             <p>
               Bij vragen kun je mailen naar
-              <a href="mailto:spoenk@punch.tudelft.nl"
-                >spoenk@punch.tudelft.nl</a
-              >.
+              <a href="mailto:spoenk@punch.tudelft.nl">spoenk@punch.tudelft.nl</a>.
             </p>
           </div>
         </div>
-        <br /><br />
-        <div class="container-fluid container-background-color fancy-border" id="informatie">
-          <div class="row">
-            <div class="col-lg-9 mx-auto">
-              <p class="text-center text-big"><b>Informatie</b></p>
-              <hr class="horizontal-seperator" />
+      </div>
 
-              <p>
-                Dit jaar zal SPOENK waarschijnlijk anders zijn dan normaal door
-                de huidige COVID-19 pandemie. Ondanks dat het nog niet duidelijk
-                wat er rond mei mogelijk gaat zijn binnen de dan geldende
-                maatregelen hopen wij een sportief en gezellig SPOENK neer te
-                zetten!
-              </p>
-              <p>
-                Hieronder zie je hoe wij verwachten dat SPOENK er uit gaat zien.
-                Dit is een dynamisch programma, dus afhankelijk van de
-                maatregelen kan het programma aangepast worden!
-              </p>
+      <div class="container-fluid container-background-color intro-info">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <p class="text-center text-big"><b>Welkom</b></p>
+            <!-- TODO remove or not? -->
+            <hr class="horizontal-seperator" />
+            <p>
+              Welkom op de website van SPOENK! SPOENK is een groot
+              grasvolleybaltoernooi dat elk jaar wordt georganiseerd door de
+              Externe Toernooi Commissie van D.S.V.V. "Punch" waar je kunt
+              genieten van volleyballen en rocken op je favoriete Rock 'n Roll
+              nummers want het thema voor dit jaar is:
+            </p>
 
-              <div class="row activity-start">
-                <img
-                  src="img/Elvis_volleybal.png"
-                  class="col-xl-5 col-sm-10 img-fluid mx-auto"
-                />
+            <p class="text-center text-big thema-line">ROCK 'N ROLL SPOENK</p>
+          </div>
+        </div>
+      </div>
 
-                <div class="col-lg-7 col-md-12 mx-auto">
-                  <p class="text-center text-medium section-heading">
-                    <b>Volleybal</b>
-                  </p>
-                  <p>
-                    Gedurende het weekend zullen de teams van drie tot vier
-                    personen in het zonnetje op het gras volleyballen. Na elk
-                    dagdeel van strijden worden de poules door gewisseld, zodat
-                    iedereen in een poule zit met een niveau dat bij hun past.
-                    Op zondag middag worden de winnaars van elke poule bepaald.
-                    De winnaars en uitzonderlijke presteerders van de poules
-                    verdienen dan natuurlijk mooie prijzen.
-                  </p>
-                </div>
+
+      <br /><br />
+      <div class="container-fluid container-background-color fancy-border" id="informatie">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <p class="text-center text-big"><b>Informatie</b></p>
+            <hr class="horizontal-seperator" />
+
+            <p>
+              Dit jaar zal SPOENK waarschijnlijk anders zijn dan normaal door
+              de huidige COVID-19 pandemie. Ondanks dat het nog niet duidelijk
+              wat er rond eind vakantie mogelijk gaat zijn binnen de dan geldende
+              maatregelen hopen wij een sportief en gezellig SPOENK neer te
+              zetten!
+            </p>
+            <p>
+              Hieronder zie je hoe wij verwachten dat SPOENK er uit gaat zien.
+              Dit is een dynamisch programma, dus afhankelijk van de
+              maatregelen kan het programma aangepast worden!
+            </p>
+
+            <div class="row activity-start">
+              <img src="img/Elvis_volleybal.png" class="col-xl-5 col-sm-10 img-fluid mx-auto" />
+
+              <div class="col-lg-7 col-md-12 mx-auto">
+                <p class="text-center text-medium section-heading">
+                  <b>Volleybal</b>
+                </p>
+                <p>
+                  Gedurende het weekend zullen de teams van drie tot vier
+                  personen in het zonnetje op het gras volleyballen. Na elk
+                  dagdeel van strijden worden de poules door gewisseld, zodat
+                  iedereen in een poule zit met een niveau dat bij hun past.
+                  Op zondag middag worden de winnaars van elke poule bepaald.
+                  De winnaars en uitzonderlijke presteerders van de poules
+                  verdienen dan natuurlijk mooie prijzen.
+                </p>
               </div>
+            </div>
 
-              <br /><br />
-              <div class="row">
-                <div class="col-lg-7 col-md-12 mx-auto">
-                  <p class="text-center text-medium section-heading">
-                    <b>BBQ</b>
-                  </p>
-                  <p class="text-small">
-                    <em>We weten nog niet zeker of dit doorgaat!</em>
-                  </p>
-                  <p>
-                    Nadat je je best hebt gedaan op het grasvolleybalveld, heb je zeker een smaakvolle
-                     BBQ verdient waar je je energie terug kan krijgen en lekker kan genieten met je teamgenootjes!
-                  </p>
-                </div>
-                <img
-                  src="img/Rollingstones_hamburger.png"
-                  class="col-xl-5 col-sm-10 img-fluid mx-auto"
-                />
+            <br /><br />
+            <div class="row">
+              <div class="col-lg-7 col-md-12 mx-auto">
+                <p class="text-center text-medium section-heading">
+                  <b>BBQ</b>
+                </p>
+                <p class="text-small">
+                  <em>We weten nog niet zeker of dit doorgaat!</em>
+                </p>
+                <p>
+                  Nadat je je best hebt gedaan op het grasvolleybalveld, heb je zeker een smaakvolle
+                  BBQ verdient waar je je energie terug kan krijgen en lekker kan genieten met je teamgenootjes!
+                </p>
               </div>
+              <img src="img/Rollingstones_hamburger.png" class="col-xl-5 col-sm-10 img-fluid mx-auto" />
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- TODO Update link and prices -->
-      <!-- Inschrijven -->
-      <section id="inschrijven">
-        <div class="container-fluid container-background-color fancy-border">
-          <div class="row">
-            <div class="col-lg-9 col-sm-12 mx-auto">
-              <p class="text-center text-medium"><b>Inschrijven</b></p>
-              <hr />
-              <h1 class="text-center">
-                De inschrijvingen gaan op een later moment open
-              </h1>
-              <br />
-              <p>Let op: het is alleen mogelijk om je samen met je team in te schrijven voor deze interesselijst, 
-                niet individueel. Stel dus alvast een team samen!</p>
-              <p>Disclaimer prijs: Corona is nog steeds een ding en dit zorgt ervoor dat later nog veel kan veranderen, 
-                en daarmee dus ook de prijs. De prijs is dus een schatting en kan nog veranderen. </p>
-              <br />
-              <div class="row">
-                
-                <div class="col-md-5 col-sm-9 mx-auto">
-                  <table class="table-prices">
-                    <thead>
-                      <b>Toernooikosten per persoon</b>
-                    </thead>
-                    <tbody>
-                      <!-- <tr>
+    <!-- TODO Update link and prices -->
+    <!-- Inschrijven -->
+    <section id="inschrijven">
+      <div class="container-fluid container-background-color fancy-border">
+        <div class="row">
+          <div class="col-lg-9 col-sm-12 mx-auto">
+            <p class="text-center text-medium"><b>Inschrijven</b></p>
+            <hr />
+            <h1 class="text-center">
+              De inschrijvingen gaan op een later moment open
+            </h1>
+            <br />
+            <p>Let op: het is alleen mogelijk om je samen met je team in te schrijven voor deze interesselijst,
+              niet individueel. Stel dus alvast een team samen!</p>
+            <p>Disclaimer prijs: Corona is nog steeds een ding en dit zorgt ervoor dat later nog veel kan veranderen,
+              en daarmee dus ook de prijs. De prijs is dus een schatting en kan nog veranderen. </p>
+            <br />
+            <div class="row">
+
+              <div class="col-md-5 col-sm-9 mx-auto">
+                <table class="table-prices">
+                  <thead>
+                    <b>Toernooikosten per persoon</b>
+                  </thead>
+                  <tbody>
+                    <!-- <tr>
                         <td><b>Gehele weekend</b></td>
                         <td><b>&euro; 10</b></td>
                       </tr> -->
-                      <tr>
-                        <td style="padding: 0 20px 0 0;">Zaterdag</td>
-                        <td>&euro; 12.50</td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 20px 0 0;">Zaterdag BBQ</td>
-                        <td>&euro; 5.50</td>
-                      </tr>
-                      <tr>
-                        <td style="padding: 0 20px 0 0 ;">Zondag</td>
-                        <td>&euro; 12.50</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                  <div class="d-flex justify-content-center">
-                    <a
-                      href="https://docs.google.com/forms/d/e/1FAIpQLScOdvQO3MI4frADLU4lBMk-V1Ynm3g60aaKdTzCh_WG2_754Q/viewform?usp=sf_link"
-                      target="_blank"
-                    >
-                      <button class="btn btn-success">Interesselijst</button>
-                    </a>
-                  </div>
+                    <tr>
+                      <td style="padding: 0 20px 0 0;">Zaterdag</td>
+                      <td>&euro; 12.50</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 20px 0 0;">Zaterdag BBQ</td>
+                      <td>&euro; 5.50</td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0 20px 0 0 ;">Zondag</td>
+                      <td>&euro; 12.50</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-center">
+                  <a href="https://docs.google.com/forms/d/e/1FAIpQLScOdvQO3MI4frADLU4lBMk-V1Ynm3g60aaKdTzCh_WG2_754Q/viewform?usp=sf_link"
+                    target="_blank">
+                    <button class="btn btn-success">Interesselijst</button>
+                  </a>
                 </div>
               </div>
-              <br />
-              <div class="row">
-                Als je nog vragen hebt over de inschrijvingen, stuur gerust een
-                mailtje naar spoenk@punch.tudelft.nl
-              </div>
+            </div>
+            <br />
+            <div class="row">
+              Als je nog vragen hebt over de inschrijvingen, stuur gerust een
+              mailtje naar spoenk@punch.tudelft.nl
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Programma -->
-      <section id="programma">
-        <div class="container-fluid container-background-color fancy-border">
-          <div class="row">
-            <div class="col-lg-9 mx-auto">
-              <p class="text-center text-big"><b>Programma</b></p>
-              <hr />
-              <div class="calendar-body">
-                <!-- Generated in main.js-->
-              </div>
+    <!-- Programma -->
+    <section id="programma">
+      <div class="container-fluid container-background-color fancy-border">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <p class="text-center text-big"><b>Programma</b></p>
+            <hr />
+            <div class="calendar-body">
+              <!-- Generated in main.js-->
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Themapresentatie -->
-      <section id="themapresentatie">
-        <div class="container-fluid container-background-color fancy-border">
-          <div class="row">
-            <div class="col-lg-9 mx-auto">
-              <p class="text-center text-big"><b>Themapresentatie</b></p>
-              <hr />
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe src="https://player.vimeo.com/video/521331855" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-                <p><a href="https://vimeo.com/521331855">Themabekendmaking_xtc (1)</a> from <a href="https://vimeo.com/user124331036">Thomas Brehm</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
-              </div>
+    <!-- Themapresentatie -->
+    <section id="themapresentatie">
+      <div class="container-fluid container-background-color fancy-border">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <p class="text-center text-big"><b>Themapresentatie</b></p>
+            <hr />
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe src="https://player.vimeo.com/video/521331855" width="640" height="360" frameborder="0"
+                allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+              <p><a href="https://vimeo.com/521331855">Themabekendmaking_xtc (1)</a> from <a
+                  href="https://vimeo.com/user124331036">Thomas Brehm</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Foto's -->
-      <section id="foto">
-        <div class="container-fluid container-background-color fancy-border">
-          <div class="row">
-            <div class="col-lg-9 mx-auto">
-              <p class="text-center text-big"><b>Foto's</b></p>
-              <hr />
+    <!-- Foto's -->
+    <section id="foto">
+      <div class="container-fluid container-background-color fancy-border">
+        <div class="row">
+          <div class="col-lg-9 mx-auto">
+            <p class="text-center text-big"><b>Foto's</b></p>
+            <hr />
 
-              <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="thumbnail">
-                    <a
-                      target="_BLANK"
-                      href="https://photos.google.com/share/AF1QipNvL4Gpukc8tjRGOe0s8WWIHBZ-BpFhfTrTyEo6po1_CftIcmxTRO8_BMV0zzdHyw?key=NGVmWm94by1lWW5aOXFUbDJJLTY5SEZTQVFkeTBR"
-                    >
-                      <img
-                        class="scale-image lazy"
-                        src="img/thumbnail/zaterdag_2019.JPG"
-                      />
-                      <div class="caption">Zaterdag 2019</div>
-                    </a>
-                  </div>
+            <div class="row">
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="thumbnail">
+                  <a target="_BLANK"
+                    href="https://photos.google.com/share/AF1QipNvL4Gpukc8tjRGOe0s8WWIHBZ-BpFhfTrTyEo6po1_CftIcmxTRO8_BMV0zzdHyw?key=NGVmWm94by1lWW5aOXFUbDJJLTY5SEZTQVFkeTBR">
+                    <img class="scale-image lazy" src="img/thumbnail/zaterdag_2019.JPG" />
+                    <div class="caption">Zaterdag 2019</div>
+                  </a>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="thumbnail">
-                    <a
-                      target="_BLANK"
-                      href="https://photos.google.com/share/AF1QipPszFN43l8_o2WgHUesRPSzItg73nnLgWGS2vA-enSTvW0lJ7JrCwJX7rHe-PsQyw?key=a0RtWjc0RDhXSVd5MWpRUlRSSWJkSUZtRXkyV1ZB"
-                    >
-                      <img
-                        class="scale-image lazy"
-                        src="img/thumbnail/zondag_2019.JPG"
-                      />
-                      <div class="caption">Zondag 2019</div>
-                    </a>
-                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="thumbnail">
+                  <a target="_BLANK"
+                    href="https://photos.google.com/share/AF1QipPszFN43l8_o2WgHUesRPSzItg73nnLgWGS2vA-enSTvW0lJ7JrCwJX7rHe-PsQyw?key=a0RtWjc0RDhXSVd5MWpRUlRSSWJkSUZtRXkyV1ZB">
+                    <img class="scale-image lazy" src="img/thumbnail/zondag_2019.JPG" />
+                    <div class="caption">Zondag 2019</div>
+                  </a>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="thumbnail">
-                    <a
-                      target="_BLANK"
-                      href="https://photos.google.com/share/AF1QipNYgz4vMqblJrKGiIZ55FRbKgqbOXH04HZkoE9b97IgxuRU1zbPxUt8VOnGx4CeZg?key=Qkc5MVVsMUxtNy16a2dZUXJMSkI2cVZNb3MxSlNR"
-                    >
-                      <img
-                        class="scale-image lazy"
-                        src="img/thumbnail/zaterdag_2018.jpg"
-                      />
-                      <div class="caption">Zaterdag 2018</div>
-                    </a>
-                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="thumbnail">
+                  <a target="_BLANK"
+                    href="https://photos.google.com/share/AF1QipNYgz4vMqblJrKGiIZ55FRbKgqbOXH04HZkoE9b97IgxuRU1zbPxUt8VOnGx4CeZg?key=Qkc5MVVsMUxtNy16a2dZUXJMSkI2cVZNb3MxSlNR">
+                    <img class="scale-image lazy" src="img/thumbnail/zaterdag_2018.jpg" />
+                    <div class="caption">Zaterdag 2018</div>
+                  </a>
                 </div>
-                <div class="col-xs-6 col-sm-4 col-md-3">
-                  <div class="thumbnail">
-                    <a
-                      target="_BLANK"
-                      href="https://photos.google.com/share/AF1QipMZuzwkZwrVecDFdYleo_JnwSlsHYib2ygeJlRduOwfWjlmGKpcAfNy_9k5dRl-ew?key=RDNpdWpaN2FseWNXc0JjREIweEpuMFl5OUlpZFJB"
-                    >
-                      <img
-                        class="scale-image lazy"
-                        src="img/thumbnail/zondag_2018.jpg"
-                      />
-                      <div class="caption">Zondag 2018</div>
-                    </a>
-                  </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="thumbnail">
+                  <a target="_BLANK"
+                    href="https://photos.google.com/share/AF1QipMZuzwkZwrVecDFdYleo_JnwSlsHYib2ygeJlRduOwfWjlmGKpcAfNy_9k5dRl-ew?key=RDNpdWpaN2FseWNXc0JjREIweEpuMFl5OUlpZFJB">
+                    <img class="scale-image lazy" src="img/thumbnail/zondag_2018.jpg" />
+                    <div class="caption">Zondag 2018</div>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Stop..... -->
+    <!-- Stop..... -->
 
-      <!-- Contact -->
-      <section id="contact">
-        <div class="container-fluid container-background-color fancy-border">
-          <div class="row">
-            <div class="col-lg-12 mx-auto">
-              <p class="text-center text-big"><b>Contact</b></p>
-              <hr />
-              <div class="row">
-                <div class="col-md-4">
-                  <dl class="dl-horizontal">
-                    <!-- TODO fix lokatie -->
-                    <!-- <dt>Adres</dt>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container-fluid container-background-color fancy-border">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <p class="text-center text-big"><b>Contact</b></p>
+            <hr />
+            <div class="row">
+              <div class="col-md-4">
+                <dl class="dl-horizontal">
+                  <!-- TODO fix lokatie -->
+                  <!-- <dt>Adres</dt>
                     <dd>Rijksstraatweg 9 <br />2628 GZ Delft</dd> -->
-                    <dt>Locatie</dt>
-                    <dd>Wordt later bekend gemaakt!</dd>
-                    <!-- <dt>Telefoon</dt>
+                  <dt>Locatie</dt>
+                  <dd>Wordt later bekend gemaakt!</dd>
+                  <!-- <dt>Telefoon</dt>
                     <dd>+316 24467580</dd> -->
-                    <dt>Email</dt>
-                    <dd><a href="mailto:spoenk@punch.tudelft.nl">spoenk@punch.tudelft.nl</a></dd>
-                    <!-- <dt>Bereikbaarheid</dt>
+                  <dt>Email</dt>
+                  <dd><a href="mailto:spoenk@punch.tudelft.nl">spoenk@punch.tudelft.nl</a></dd>
+                  <!-- <dt>Bereikbaarheid</dt>
                     <dd>8 min. lopen vanaf bushalte Nassauplein (Lijn 37)</dd> -->
-                  </dl>
-                  <img src="img/logos/punch.png" alt="" width="100%" />
-                  <img src="img/logos/tudelft.png" alt="" width="100%" />
-                </div>
+                </dl>
+                <img src="img/logos/punch.png" alt="" width="100%" />
+                <img src="img/logos/tudelft.png" alt="" width="100%" />
+              </div>
 
-                <div class="col-md-7">
-                  <div class="shadow_container">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39302.40544272392!2d4.32867848732843!3d51.999582551628556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5c3515f58fd%3A0x89b05ca3c54bd43d!2sDelft!5e0!3m2!1sen!2snl!4v1615227729121!5m2!1sen!2snl"></iframe>                      
-                      <!-- <iframe
+              <div class="col-md-7">
+                <div class="shadow_container">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39302.40544272392!2d4.32867848732843!3d51.999582551628556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5c3515f58fd%3A0x89b05ca3c54bd43d!2sDelft!5e0!3m2!1sen!2snl!4v1615227729121!5m2!1sen!2snl"></iframe>
+                    <!-- <iframe
                         class="embed-responsive-item"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2456.061569144583!2d4.3873490000000075!3d52.00575600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5f57d992b69%3A0x27b34a28ed66a26d!2sVoetbalvereniging+SV+Wippolder!5e0!3m2!1sen!2snl!4v1426845606093"
                         style="border: 0"
                       ></iframe> -->
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <footer class="text-center" id="partners">
-        <div class="footer-above">
-          <div class="container-fluid footer-fluid">
-            <div class="row">
-              <!-- TODO fix sponsors -->
-              <!-- <div class="col-lg-12 mx-auto"> -->
-                <!-- <p class="text-center text-big"><b>Sponsoren</b></p> -->
-                <!-- <hr /> -->
-                <!-- <div class="row sponsor-body"> -->
-                  <!-- Gegenereerd in main.js-->
-                <!-- </div> -->
-              </div>
-            </div>
+    <footer class="text-center" id="partners">
+      <div class="footer-above">
+        <div class="container-fluid footer-fluid">
+          <div class="row">
+            <!-- TODO fix sponsors -->
+            <!-- <div class="col-lg-12 mx-auto"> -->
+            <!-- <p class="text-center text-big"><b>Sponsoren</b></p> -->
+            <!-- <hr /> -->
+            <!-- <div class="row sponsor-body"> -->
+            <!-- Gegenereerd in main.js-->
+            <!-- </div> -->
           </div>
-          <div class="footer-below"></div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+      <div class="footer-below"></div>
+  </div>
+  </footer>
+  </div>
+</body>
+
 </html>

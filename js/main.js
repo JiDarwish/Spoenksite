@@ -25,74 +25,75 @@ function createSponsor(sponsorData) {
 
 // Add events to this calendar and change the width to make it look perfect.
 var calendar = {
-  saturday: {
-    dayTitle: 'Zaterdag 29 mei',
-    events: [
-      {
-        name: 'Wedstrijden',
-        start: '10:00',
-        width: 0.25,
-        img: 'img/calendar/bal.png',
-      },
-      {
-        name: 'Lunch',
-        start: '13:00',
-        width: 0.15,
-        img: 'img/calendar/eat.png',
-      },
-      {
-        name: 'Wedstrijden',
-        start: '14:00',
-        width: 0.25,
-        img: 'img/calendar/bal.png',
-      },
-      {
-        name: 'BBQ',
-        start: '17:00',
-        width: 0.15,
-        img: 'img/calendar/bbq.png',
-      },
-      {
-        name: 'Zittende borrel',
-        start: '20:30',
-        width: 0.2,
-        img: 'img/calendar/beer.png',
-      },
-    ],
-  },
-  sunday: {
-    dayTitle: 'Zondag 30 mei',
-    events: [
-      {
-        name: 'Wedstrijden',
-        start: '10:00',
-        width: 0.25,
-        img: 'img/calendar/bal.png',
-      },
-      {
-        name: 'Lunch',
-        start: '13:00',
-        width: 0.15,
-        img: 'img/calendar/eat.png',
-      },
-      {
-        name: 'Wedstrijden',
-        start: '14:00',
-        width: 0.25,
-        img: 'img/calendar/bal.png',
-      },
-      {
-        name: 'Prijsuitreiking',
-        start: '18:00',
-        width: 0.2,
-        img: 'img/calendar/bal.png',
-      },
-      {
-        name: 'empty',
-        width: 0.15,
-      },
-    ],
-  },
+  // TODO add agenda
+  // saturday: {
+  //   dayTitle: 'Zaterdag 29 mei',
+  //   events: [
+  //     {
+  //       name: 'Wedstrijden',
+  //       start: '10:00',
+  //       width: 0.25,
+  //       img: 'img/calendar/bal.png',
+  //     },
+  //     {
+  //       name: 'Lunch',
+  //       start: '13:00',
+  //       width: 0.15,
+  //       img: 'img/calendar/eat.png',
+  //     },
+  //     {
+  //       name: 'Wedstrijden',
+  //       start: '14:00',
+  //       width: 0.25,
+  //       img: 'img/calendar/bal.png',
+  //     },
+  //     {
+  //       name: 'BBQ',
+  //       start: '17:00',
+  //       width: 0.15,
+  //       img: 'img/calendar/bbq.png',
+  //     },
+  //     {
+  //       name: 'Zittende borrel',
+  //       start: '20:30',
+  //       width: 0.2,
+  //       img: 'img/calendar/beer.png',
+  //     },
+  //   ],
+  // },
+  // sunday: {
+  //   dayTitle: 'Zondag 30 mei',
+  //   events: [
+  //     {
+  //       name: 'Wedstrijden',
+  //       start: '10:00',
+  //       width: 0.25,
+  //       img: 'img/calendar/bal.png',
+  //     },
+  //     {
+  //       name: 'Lunch',
+  //       start: '13:00',
+  //       width: 0.15,
+  //       img: 'img/calendar/eat.png',
+  //     },
+  //     {
+  //       name: 'Wedstrijden',
+  //       start: '14:00',
+  //       width: 0.25,
+  //       img: 'img/calendar/bal.png',
+  //     },
+  //     {
+  //       name: 'Prijsuitreiking',
+  //       start: '18:00',
+  //       width: 0.2,
+  //       img: 'img/calendar/bal.png',
+  //     },
+  //     {
+  //       name: 'empty',
+  //       width: 0.15,
+  //     },
+  //   ],
+  // },
 };
 
 $(document).ready(function () {
